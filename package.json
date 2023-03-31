@@ -1,0 +1,23 @@
+{
+  "name": "itlogia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^5.0.0",
+    "jquery": "^3.6.1",
+    "magnific-popup": "^1.1.0",
+    "wowjs": "^1.1.3"
+  }
+}

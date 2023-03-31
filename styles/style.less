@@ -1,0 +1,1174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: PantonExtraBold;
+  src: url("../fonts/Panton-ExtraBold.ttf");
+}
+
+body {
+  font-family: MontserratRegular, sans-serif;
+  background-image: url("../images/fon-1.png");
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+
+.header__burger {
+  display: none;
+}
+
+.menu__close {
+  display: none;
+}
+
+.header {
+  padding: 35px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+
+      .menu-list {
+        width: 380px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        .menu-item {
+
+          .menu-link {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            padding-bottom: 4px;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s ease;
+
+            &:hover {
+              border-bottom: 1px solid #6224df;
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      width: 380px;
+      justify-content: space-between;
+
+      .time {
+        display: flex;
+        align-items: center;
+
+        .time-day-1 {
+          font-size: 15px;
+          font-family: "MontserratRegular", sans-serif;
+          color: rgb(255, 255, 255);
+          line-height: 1.333;
+          text-align: left;
+          margin-left: 10px;
+
+        }
+      }
+
+      .phone {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+
+
+        .phone-images {
+          margin-right: 5px;
+        }
+
+        .phone-number {
+          font-size: 15px;
+          font-family: "MontserratRegular", sans-serif;
+          color: rgb(98, 36, 223);
+          text-align: left;
+        }
+
+        .phone-text {
+          font-size: 15px;
+          font-family: "MontserratRegular", sans-serif;
+          color: rgb(254, 254, 254);
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  padding: 30px 0 90px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+    .main-title-1 {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+      font-family: "PantonExtraBold", sans-serif;
+      color: rgb(255, 255, 255);
+      line-height: 1.389;
+      width: 439px;
+    }
+
+    .main-info {
+      max-width: 439px;
+
+
+      .main-title {
+        font-size: 36px;
+        font-family: "PantonExtraBold", sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.389;
+        text-align: left;
+        margin-bottom: 38px;
+      }
+
+      .main-text {
+        font-size: 15px;
+        font-family: "MontserratRegular", sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.333;
+        text-align: left;
+        margin-bottom: 42px;
+      }
+
+      .main-btn {
+        width: 240px;
+        height: 50px;
+        box-sizing: border-box;
+      }
+    }
+
+    .main-images {
+      position: relative;
+
+      .main-image-2 {
+        display: none;
+      }
+
+      .stock {
+        border-radius: 50%;
+        background-color: rgb(7, 0, 21);
+        position: absolute;
+        right: 430px;
+        top: 178px;
+       width: 127px;
+        height: 127px;
+        box-shadow: 0 0 5px 2px rgba(90, 36, 223, 0.7);
+        transition: all 0.5s ease;
+
+        &:hover {
+          box-shadow: 0 0 5px 2px rgba(90, 36, 223, 1);
+        }
+
+
+        &:before {
+          content: '';
+          border: 1px dashed rgb(255, 255, 255);
+          border-radius: 50%;
+          position: absolute;
+          width: 115px;
+          height: 115px;
+          bottom: 5px;
+          right: 5px;
+          z-index: 5;
+        }
+      }
+
+      .stock-text {
+        width: 96px;
+        font-size: 14px;
+        font-family: "PantonExtraBold", sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.286;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        left: 16px;
+      }
+    }
+  }
+}
+
+
+.btn {
+  background-color: rgb(98, 36, 223);
+  border: 1px solid rgb(98, 36, 223);
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "MontserratMedium", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 0 5px 2px rgba(90, 36, 223, 1);
+  }
+}
+
+
+.review {
+  padding: 90px 0 75px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .review-border-1 {
+      border: 1px solid rgb(98, 36, 223);
+      width: 510px;
+      height: 250px;
+      box-sizing: border-box;
+      padding: 30px 0 28px 0;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
+      align-items: start;
+
+      .review-image-1-1 {
+        display: none;
+      }
+
+      .review-card-1 {
+        width: 211px;
+
+        .review-title-1 {
+          margin-bottom: 19px;
+        }
+      }
+    }
+
+    .review-border-2 {
+      border: 1px solid rgb(98, 36, 223);
+      width: 510px;
+      height: 230px;
+      box-sizing: border-box;
+      padding: 30px 0 28px 0;
+      display: flex;
+      justify-content: space-around;
+
+      .review-image-2-2 {
+        display: none;
+      }
+
+      .review-card-2 {
+        .review-title-2 {
+          width: 235px;
+          margin-bottom: 20px;
+        }
+
+        .review-text-2 {
+          width: 211px;
+        }
+      }
+    }
+
+    .review-border-3 {
+      border: 1px solid rgb(98, 36, 223);
+      width: 540px;
+      height: 405px;
+      box-sizing: border-box;
+      padding: 30px 0 28px 0;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 61px;
+
+      .review-image-3-3 {
+        display: none;
+      }
+
+
+      .review-card-3 {
+        .review-title-3 {
+          margin-bottom: 19px;
+        }
+
+        .review-text-3 {
+          width: 420px;
+          margin-bottom: 38px;
+        }
+      }
+    }
+
+    .review-title {
+      margin-bottom: 15px;
+    }
+
+    .review-text {
+      width: 380px;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-family: "PantonExtraBold", sans-serif;
+  color: rgb(98, 36, 223);
+  text-align: left;
+}
+
+.text {
+  font-size: 15px;
+  font-family: "MontserratRegular", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+
+.masters {
+  padding: 75px 0 55px 0;
+
+  .container {
+    .masters-title {
+      font-size: 30px;
+      font-family: "PantonExtraBold", sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .masters-text {
+      font-size: 15px;
+      font-family: "MontserratRegular", sans-serif;
+      color: rgb(255, 255, 255);
+      line-height: 1.333;
+      text-align: left;
+      width: 348px;
+      margin-bottom: 60px;
+    }
+
+    .slider {
+      display: flex;
+      justify-content: center;
+
+      .slide {
+        width: 350px;
+        height: 530px;
+        text-align: center;
+
+        .master-border {
+          border: 1px solid rgb(98, 36, 223);
+          width: 350px;
+          height: 167px;
+          box-sizing: border-box;
+          margin-top: 10px;
+          padding: 29px;
+
+          .master-name {
+            font-size: 18px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(98, 36, 223);
+            text-align: left;
+            margin-bottom: 15px;
+          }
+
+          .master-experience {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(148, 148, 148);
+            text-align: left;
+            margin-bottom: 16px;
+          }
+
+          .master-info {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.333;
+            text-align: left;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+
+    .slider-arrows {
+      text-align: center;
+      margin-top: 30px;
+
+      .slider-arrow-1 {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgb(98, 36, 223);
+        padding: 16px 19px 16px 20px;
+        box-sizing: border-box;
+        margin-right: 15px;
+      }
+
+      .slider-arrow-2 {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgb(98, 36, 223);
+        padding: 16px 20px 16px 19px;
+        box-sizing: border-box;
+        margin-left: 15px;
+      }
+    }
+
+    .slick-dots {
+      bottom: -50px;
+
+      .slick-active {
+        background: rgb(98, 36, 223)
+      }
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        border: 1px solid rgb(98, 36, 223);
+        border-radius: 50%;
+
+        &:hover {
+          background: rgb(98, 36, 223);
+        }
+      }
+    }
+  }
+}
+
+
+.products {
+  padding: 75px 0;
+
+  .container {
+    .products-title {
+      font-size: 30px;
+      font-family: "PantonExtraBold", sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      margin-bottom: 42px;
+    }
+
+    .menu-products {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 61px;
+
+      .menu-list-products {
+        width: 510px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        .menu-item-products {
+
+          .menu-link-products {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            padding-bottom: 4px;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s ease;
+
+            &:hover {
+              border-bottom: 1px solid #6224df;
+              }
+            }
+
+          .active{
+            border-bottom: 1px solid #6224df;
+          }
+        }
+      }
+    }
+
+    .product-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .product-cards-border {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid rgb(98, 36, 223);
+        width: 524px;
+        height: 250px;
+        align-items: center;
+        margin-bottom: 60px;
+        box-sizing: border-box;
+
+        &:last-child {
+          border: transparent;
+          justify-content: left;
+          margin-bottom: 0;
+        }
+
+        &:nth-child(3) {
+          margin-bottom: 0;
+        }
+
+        .product-card {
+          .product-card-title {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(98, 36, 223);
+            text-align: left;
+            margin-bottom: 18px;
+          }
+
+          .product-card-info-1 {
+            width: 288px;
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1;
+            text-align: left;
+            margin-bottom: 25px;
+          }
+
+          .product-card-info-2 {
+            width: 288px;
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.333;
+            text-align: left;
+          }
+
+          .product-card-price {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            margin-top: 35px;
+
+          }
+
+          .product-card-list {
+            list-style: none;
+            text-align: left;
+
+            .product-card-item {
+              font-size: 15px;
+              font-family: "MontserratRegular", sans-serif;
+              color: rgb(255, 255, 255);
+              line-height: 1.333;
+              text-align: left;
+            }
+          }
+        }
+
+        .product-card-images {
+          .product-card-image-1 {
+            display: none;
+          }
+        }
+      }
+    }
+
+
+    .snacks {
+      display: none;
+      justify-content: space-between;
+
+      .snacks-border {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid rgb(98, 36, 223);
+        width: 524px;
+        height: 250px;
+        align-items: center;
+        box-sizing: border-box;
+
+        .snack-name-price {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .snack-name {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            margin-left: 15px;
+          }
+
+          .snack-price {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .drinks {
+      display: none;
+      justify-content: space-between;
+
+      .drinks-border {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid rgb(98, 36, 223);
+        width: 524px;
+        height: 250px;
+        align-items: center;
+        box-sizing: border-box;
+
+        .drinks-name-price {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .drink-name {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            margin-left: 15px;
+          }
+
+          .drink-price {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+      .alcohols {
+        display: none;
+        justify-content: space-between;
+
+        .alcohols-border {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          border: 1px solid rgb(98, 36, 223);
+          width: 524px;
+          height: 250px;
+          align-items: center;
+          box-sizing: border-box;
+
+          .alcohols-name-price {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .alcohol-name {
+              font-size: 15px;
+              font-family: "MontserratRegular", sans-serif;
+              color: rgb(255, 255, 255);
+              margin-left: 15px;
+            }
+
+            .alcohol-price {
+              font-size: 20px;
+              font-family: "PantonExtraBold", sans-serif;
+              color: rgb(255, 255, 255);
+              margin-right: 15px;
+            }
+          }
+
+      }
+    }
+
+
+
+  }
+
+
+
+}
+
+  .stocks {
+    padding: 75px 0;
+
+    .container {
+      .stocks-title {
+        font-size: 30px;
+        font-family: "PantonExtraBold", sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .stocks-info {
+        font-size: 15px;
+        font-family: "MontserratRegular", sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 1.333;
+        text-align: left;
+        width: 304px;
+        margin-bottom: 60px;
+        box-sizing: border-box;
+      }
+
+      .stocks-list {
+        .stocks-item {
+          width: 350px;
+
+          .stocks-images {
+            margin-bottom: 20px;
+          }
+
+          .stocks-text {
+            width: 350px;
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.333;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+  }
+
+  .gallery {
+    padding: 75px 0 150px 0;
+
+    .container {
+      .gallery-title {
+        font-size: 30px;
+        font-family: "PantonExtraBold", sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 45px;
+      }
+
+      .gallery-images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .gallery-image {
+          margin-bottom: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:nth-child(3) {
+            margin-bottom: 0;
+          }
+        }
+
+        .gallery-image-2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .order {
+    background-image: url("../images/order-fon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0 40px 0;
+
+    .container {
+      .order-fon {
+        background-color: rgb(7, 0, 21);
+        width: 570px;
+        height: 355px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+
+        .order-info-form {
+          width: 100%;
+          //display: flex;
+          display: none;
+          justify-content: center;
+          align-items: center;
+
+
+          .info-text-form {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+        }
+
+
+        .order-form {
+          //display: none;
+          padding: 25px 0;
+          align-items: center;
+          width: 380px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .order-title {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.25;
+            text-align: center;
+          }
+
+          .error-input {
+            font-size: 14px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(239, 8, 8);
+            margin-bottom: 10px;
+            display: none;
+          }
+
+          .order-input {
+            width: 350px;
+            height: 40px;
+            border: 1px solid rgb(98, 36, 223);
+            background: transparent;
+            font-size: 13px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 0 15px;
+            box-sizing: border-box;
+
+            &::placeholder {
+              font-size: 13px;
+              font-family: "MontserratRegular", sans-serif;
+              color: rgb(180, 179, 179);
+              text-align: left;
+            }
+          }
+
+          .order-btn {
+            width: 350px;
+            height: 50px;
+          }
+
+          .order-info {
+            font-size: 11px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(143, 143, 143);
+            line-height: 1.364;
+            text-align: left;
+            padding: 0 15px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+
+
+  .contacts {
+    padding: 150px 0 83px 0;
+
+    .container {
+      .contacts-title {
+        font-family: "PantonExtraBold", sans-serif;
+        text-align: left;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 64px;
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+
+        .contact-image-map-2 {
+          display: none;
+        }
+
+        .contact-info {
+          margin-left: 60px;
+
+          .contact-title {
+            font-size: 20px;
+            font-family: "PantonExtraBold", sans-serif;
+            color: rgb(98, 36, 223);
+            text-align: left;
+            margin-top: 40px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+
+          .contact-text {
+            font-size: 14px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 1.286;
+            text-align: left;
+            margin-top: 20px;
+          }
+
+          .address {
+            width: 290px;
+          }
+
+          .time {
+            width: 170px;
+          }
+
+          .age {
+            width: 130px;
+          }
+
+          .age-info {
+            width: 215px;
+            margin-top: 0;
+          }
+
+          .social-network {
+            margin-top: 20px;
+
+            .social-network-image {
+              margin-right: 16px;
+              cursor: pointer;
+              transition: all 0.5s ease;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 83px 0 55px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .footer-all {
+        .rights {
+          font-size: 13px;
+          font-family: "MontserratRegular", sans-serif;
+          color: rgb(147, 147, 147);
+          text-align: left;
+          margin-top: 35px;
+        }
+      }
+
+      .footer-order {
+        display: flex;
+
+        .footer-phone {
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          margin-left: 45px;
+
+          .phone-images {
+            margin-right: 5px;
+          }
+
+          .phone-number {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(98, 36, 223);
+            text-align: left;
+          }
+
+          .phone-text {
+            font-size: 15px;
+            font-family: "MontserratRegular", sans-serif;
+            color: rgb(254, 254, 254);
+            text-align: left;
+          }
+        }
+
+        .footer-btn {
+          width: 240px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+
+  .loader {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(98, 36, 223);
+    margin: -4px 0 0 -4px;
+  }
+
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.upbtn {
+  opacity: 0.8;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: -80px;
+  right: 20px;
+  cursor: pointer;
+  border:3px solid rgb(144, 94, 246);
+  transition: all .7s ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgb(98, 36, 223);
+  background-image: url('../images/free.png');
+  background-size: cover;
+}
+.upbtn:hover {
+  opacity: 1;
+  background-color: rgb(98, 36, 223);
+}
+
+
+
+
+@import url("./adaptive");
+  @import url("./slick");
+  @import url("./slick-theme");
